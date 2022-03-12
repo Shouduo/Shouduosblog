@@ -732,7 +732,7 @@ valine:
   lang: 'zh-CN'
   highlight: false
   recordIP: false
-  serverURLs: ''
+  serverURLs: https://7grzhkpl.api.lncldglobal.com
   emojiCDN:
   emojiMaps:
   enableQQ: false
