@@ -5,9 +5,9 @@ date: 2016-08-27 10:22:45
 updated: 2016-08-31 20:17:09
 tags: ['Android', 'Java']
 categories: ['Android']
-banner_img: '/img/post/java-abstract-versus-interface.png'
-index_img: '/img/post/java-abstract-versus-interface.png'
-abbrlink: java-abstract-versus-interface
+banner_img: /img/post/java_abstract_versus_interface.png
+index_img: /img/post/java_abstract_versus_interface.png
+abbrlink: java_abstract_versus_interface
 ---
 
 ## 前言
@@ -26,9 +26,9 @@ abbrlink: java-abstract-versus-interface
 6. abstract不能与private，static，final或native并列修饰同一个方法（抽象方法需要在抽象类被子类继承，且子类可以访问抽象类的抽象方法时才可被重写。即抽象方法的作用域必须包含子类）。
 
 例如：
-abstractTest.java
 
 ``` java
+// abstractTest.java
 abstract class Animal{
   private String name;  //抽象类可以包含普通成员变量
   
@@ -94,25 +94,23 @@ public class abstractTest{
 6.实现多接口时需要注意方法名是否重复。
 
 例如：
-Cry.java
 
 ``` java
+// Cry.java
 public interface Cry{
   public abstract void cry(); //显示声明public abstract
 }
 ```
 
-Eat.java
-
 ``` java
+// Eat.java
 public interface Eat{
   void eat();  //接口中的方法将自动声明为public abstract
 }
 ```
 
-interfaceTest.java
-
 ``` java
+// interfaceTest.java
 class Animal implements Cry, Eat{  //类可以实现多接口
   private String name;
   private String crying;
@@ -201,6 +199,6 @@ native | native 本身就和 abstract 冲突，他们都是方法的声明，只
 > 转载请附带原文地址及下方参考文章链接，请勿商业使用。
 
 参考文章：
-[Java基础篇(一)：接口与抽象类  | 作者：zhutoulwz](http://www.jianshu.com/p/2b5a9bdcd25f)
-[Java抽象类与接口的区别  | 作者：Arpit Mandliya | 翻译：Jessenpan](http://www.importnew.com/12399.html)
+[Java基础篇(一)：接口与抽象类 | 作者：zhutoulwz](http://www.jianshu.com/p/2b5a9bdcd25f)
+[Java抽象类与接口的区别 | 作者：Arpit Mandliya | 翻译：Jessenpan](http://www.importnew.com/12399.html)
 [java接口的方法修饰符可以为？(忽略内部接口) | 作者：奔跑中的蜗牛](https://www.nowcoder.com/questionTerminal/4b12e28267ad4e0ab8cde2c4a7c93a8d)

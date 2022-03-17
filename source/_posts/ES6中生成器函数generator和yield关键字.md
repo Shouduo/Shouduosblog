@@ -3,11 +3,11 @@ title: ES6 中生成器函数 generator 和 yield 关键字
 author: Shouduo
 date: 2019-08-14 17:45:18
 updated: 2019-08-16 21:55:02
-tags: ['前端', 'EcmaScript', 'JavaScript']
+tags: ['前端', 'JavaScript', 'generator']
 categories: ['Frontend']
-banner_img: '/img/post/js_generator.jpeg'
-index_img: '/img/post/js_generator.jpeg'
-abbrlink: es6-generator
+banner_img: /img/post/js_generator.jpeg
+index_img: /img/post/js_generator.jpeg
+abbrlink: js_generator
 ---
 
 ## 简介
@@ -18,13 +18,13 @@ generator（生成器）是 ES6 标准引入的新的数据类型。一个 gener
 
 ### 生成器函数 generator
 
-在 function 后加 \* 就可以声明一个 generator 函数。\* 可以和函数名贴在一起，可以和function贴在一起，也可以谁都不贴，直接放中间，不建议连起来写。详见 [ESLint](https://eslint.org/docs/rules/generator-star-spacing)
+在 function 后加 \* 就可以声明一个 generator 函数。\* 可以和函数名贴在一起，可以和function贴在一起，也可以谁都不贴，直接放中间，不建议连起来写，详见 [ESLint](https://eslint.org/docs/rules/generator-star-spacing)。
 
 ``` javascript
 function *foobar() {} //合法
 function* foobar() {} //合法
 function * foobar() {} //合法
-function*foobar() {} //浏览器不会报错，但不负 ESLint 建议
+function*foobar() {} //浏览器不会报错，但不符 ESLint 建议
 ```
 
 ### 关键字 yield

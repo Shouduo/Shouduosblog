@@ -5,9 +5,9 @@ date: 2019-10-18 19:12:05
 updated: 2019-10-18 19:47:11
 tags: ['Vue']
 categories: ['Frontend']
-banner_img: '/img/post/vue-computed.png'
-index_img: '/img/post/vue-computed.png'
-abbrlink: vue-computed
+banner_img: /img/post/vue_computed.png
+index_img: /img/post/vue_computed.png
+abbrlink: vue_computed
 ---
 
 ## 前言
@@ -146,7 +146,7 @@ abbrlink: vue-computed
 > 接着弹了 “add inner” 弹窗三次———— DOM 中调用了三次，
 > 点击 add 按钮，“add” 弹窗没有出现，“add inner” 弹窗三次。
 
-发现了没有，虽然DOM中有两次传参都是 “one”，但 “add inner” 弹窗依旧出现三次，这明显和 computed 计算属性的设计初衷相违背（相同调用，一次计算），这也很好理解，之前是记着答案的 computed，现在给咱整成记着算法的了……问了两次一样的问题，它还是老实巴交地算了两遍……QAQ，你是能愉快地传参了，但这样的 computed 又和 methods 有何区别？
+发现了没有，虽然 DOM 中有两次传参都是 “one”，但 “add inner” 弹窗依旧出现三次，这明显和 computed 计算属性的设计初衷相违背（相同调用，一次计算），这也很好理解，之前是记着答案的 computed，现在给咱整成记着算法的了……问了两次一样的问题，它还是老实巴交地算了两遍……QAQ，你是能愉快地传参了，但这样的 computed 又和 methods 有何区别？
 
 ## 总结
 
