@@ -399,11 +399,15 @@ footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
-    <p>Powered by
+    <div>Powered by
       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
       with theme
       <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-    </p>
+    </div>
+    <div style="font-size: 0.85rem">
+      <span id="timeDate">...</span>
+      <script src="/js/duration.js"></script>
+    </div>
   '
 
   # 展示网站的 PV、UV 统计数
