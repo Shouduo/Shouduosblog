@@ -62,3 +62,4 @@ console.log(Object instanceof Foo); // false
 
 参考文章：
 [Javascript继承机制的设计思想 | 作者：阮一峰](https://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
+[深入了解原型链，Object与Function的关系 | 作者：小林搞前端](https://blog.csdn.net/qq_45643079/article/details/120043001)
