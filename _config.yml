@@ -5,15 +5,16 @@
 # Site
 title: Shouduo's blog
 subtitle: ''
-description: ''
-keywords:
+description: Shouduo's blog
+keywords: ['front-end', 'web', 'blog', 'shouduo']
 author: Shouduo
 language: en
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://shouduo.netlify.app/
+url: https://shouduo.netlify.app
+root: /
 # permalink: :year/:month/:day/:title/
 permalink: :abbrlink/
 permalink_defaults:
