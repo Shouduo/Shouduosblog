@@ -1,5 +1,5 @@
 ---
-title: 前端动效之 FILP 的技术原理
+title: 前端动效之 FLIP 的技术原理
 author: Shouduo
 date: 2022-03-22 12:42:16
 updated: 2022-03-22 15:03:25
