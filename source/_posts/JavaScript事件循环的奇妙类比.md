@@ -173,7 +173,60 @@ setTimeout(() => {
 9
 ```
 
+### 案例3
+
+``` javascript
+// 相当于
+// async function async1() {
+//     console.log(1);
+//     Promise.resolve(async2()).then(() => {
+//         console.log(2);
+//     })
+// }
+async function async1() {
+    console.log(1);
+    await async2();
+    console.log(2);
+}
+async function async2() {
+    new Promise(function(resolve) {
+    console.log(3);
+    resolve();
+}).then(function() {
+    console.log(4);
+    });
+}
+console.log(5);
+setTimeout(function() {
+    console.log(6);
+}, 0)
+async1();
+new Promise(function(resolve) {
+    console.log(7);
+    resolve();
+}).then(function() {
+    console.log(8);
+});
+console.log(9);
+```
+
+运行结果：
+
+``` shell
+5
+1
+3
+7
+9
+4
+2
+8
+6
+```
+
 参考文章：
 [JavaScript 运行机制详解：再谈Event Loop | 作者：阮一峰](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
 [js中的宏任务与微任务 | 作者：tigerHee](https://zhuanlan.zhihu.com/p/78113300)
 [Event Loop的规范和实现 | 作者：长佑](https://zhuanlan.zhihu.com/p/33087629?hmsr=toutiao.io)
+[这一次，彻底弄懂 JavaScript 执行机制 | 作者：ssssyoki](https://juejin.cn/post/6844903512845860872)
+[深入解析你不知道的 EventLoop 和浏览器渲染、帧动画、空闲回调（动图演示）| 作者：ssh_晨曦时梦见兮](https://segmentfault.com/a/1190000022770549)
