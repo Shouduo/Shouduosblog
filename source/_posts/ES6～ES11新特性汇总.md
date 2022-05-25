@@ -622,19 +622,19 @@ ES6 提供了更接近传统语言（Java，C++）的写法，引入了 Class（
 
 ``` javascript
 // ES5 写法
-function Phone(brand,price){
+function Phone(brand, price){
   this.brand = brand;
   this.price = price;
 }
 Phone.prototype.call = function(){ // 添加方法
   console.log("我可以打电话！");
 }
-let HuaWei = new Phone("华为",5999); // 实例化对象
-HuaWei.call();
+let nokia = new Phone("诺记", 999); // 实例化对象
+nokia.call();
 
 // ES6 写法
-class shouji{
-  constructor(brand,price) { // 构造方法
+class Shouji{
+  constructor(brand, price) { // 构造方法
     this.brand = brand; 
     this.price = price;
   }
@@ -642,8 +642,8 @@ class shouji{
     console.log("我可以打电话！");
   }
 }
-let HuaWeiplus = new shouji("华为",5999); 
-HuaWeiplus.call();
+let huaWei = new Shouji("华为", 5999); 
+huaWei.call();
 ```
 
 Class 中的静态成员
@@ -658,7 +658,7 @@ function Phone(){}
 Phone.prototype.color = "黑色";
 Phone.name = "手机"; //name是静态成员
 Phone.change = function(){
-    console.log("我可以改变世界！");
+    console.log("我可以打电话！");
 }
 let nokia = new Phone();
 console.log(nokia.name); // undefined
@@ -667,35 +667,35 @@ console.log(nokia.color); // 黑色
 // 原因：实例对象(nokia)和函数对象(phone)的属性是不相通的，实例对象跟构造函数(phone)原型对象是相通的。函数对象的属性属于函数对象，不属于实例对象。
 
 // ES6写法
-class Phone{
+class Shouji{
   constructor() { // 构造方法
     this.color = "黑色"; 
   }
   // 静态属性，属于类而不属于实例对象
   static name = "手机";  
 	static change(){
-    console.log("我可以改变世界！");
+    console.log("我可以打电话！");
   }
 }
-let nokia = new Phone(); 
-console.log(nokia.name); // undefined
-nokia.change(); // TypeError: nokia.change is not a function
-console.log(nokia.color); // 黑色
+let huaWei = new Shouji(); 
+console.log(huaWei.name); // undefined
+huaWei.change(); // TypeError: nokia.change is not a function
+console.log(huaWei.color); // 黑色
 ```
 
 构造函数实现继承
 
 ``` javascript
 // ES5 构造函数继承
-function Phone(brand,price){ 
+function Phone(brand, price){ 
   this.brand = brand; 
   this.price = price;
 }
 Phone.prototype.dial = function(){ 
   console.log("我可以打电话！");
 }
-function SmartPhone(brand,price,color,size){ 
-  Phone.call(this,brand,price); //改变了this的指向
+function SmartPhone(brand, price, color, size){ 
+  Phone.call(this, brand, price); //改变了this的指向
   this.color = color; 
   this.size = size;
 }
@@ -714,7 +714,7 @@ chuizi.game();
 
 // ES6 class类继承
 class Phone{
-  constructor(brand,price) { 
+  constructor(brand, price) { 
     this.brand = brand; 
     this.price = price;
   }
@@ -723,8 +723,8 @@ class Phone{
   }
 }
 class SmartPhone extends Phone{
-  constructor(brand,price,color,size) { // 构造函数，没有也是合法的
-    super(brand,price); // 调用父类构造函数this.color = color;
+  constructor(brand, price, color, size) { // 构造函数，没有也是合法的
+    super(brand, price); // 调用父类构造函数this.color = color;
     this.size = size;
   }
   photo(){
@@ -734,7 +734,7 @@ class SmartPhone extends Phone{
     console.log("我可以玩游戏！");
   }
 }
-const xiaomi = new SmartPhone("小米",1999,"黑色","5.15inch"); 
+const xiaomi = new SmartPhone("小米", 1999, "黑色", "5.15inch"); 
 xiaomi.dial(); 
 xiaomi.photo(); 
 xiaomi.game();
@@ -744,7 +744,7 @@ xiaomi.game();
 
 ``` javascript
 class Phone{
-  constructor(brand,price) { 
+  constructor(brand, price) { 
     this.brand = brand; 
     this.price = price;
   }
@@ -754,8 +754,8 @@ class Phone{
 }
 
 class SmartPhone extends Phone{
-  constructor(brand,price,color,size) { 
-    super(brand,price); 
+  constructor(brand, price, color, size) { 
+    super(brand, price); 
     this.size = size;
   }
   photo(){
@@ -771,7 +771,7 @@ class SmartPhone extends Phone{
   }
 }
 
-const chuizi = new SmartPhone("小米",1999,"黑色","5.15inch");
+const chuizi = new SmartPhone("小米", 1999, "黑色", "5.15inch");
 chuizi.call(); // "我可以进行视频通话！", 调用的是子类的方法
 chuizi.photo(); 
 chuizi.game();
