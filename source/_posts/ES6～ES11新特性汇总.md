@@ -1,49 +1,52 @@
 ---
-title: ES6 ～ ES11 新特性汇总
 author: Shouduo
-date: 2021-12-10 15:14:53
-updated: 2021-12-31 22:19:04
-tags: ['前端', 'EcmaScript', 'JavaScript']
-categories: ['Frontend']
+abbrlink: es6_es11_feature
 banner_img: /img/post/ecma_feature.png
 index_img: /img/post/ecma_feature.png
-abbrlink: es6_es11_feature
+title: ES6 ～ ES11 新特性汇总
+date: 2021-12-10 15:14:53
+updated: 2021-12-31 22:19:04
+tags:
+  - 前端
+  - EcmaScript
+  - JavaScript
+categories:
+  - Frontend
 ---
-
 ## 什么是 ES（ECMAScript）
 
 ECMA（European Computer Manufacturers Association）是一家国际性会员制度的信息和电信标准组织，为了让最初的 JavaScript 与最初的 JScript 能遵循同一套标准，ECMA 制定了 ECMA-262 号标准，也名为 [ECMAScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)。
 
 ## ES 发展简史
 
-- 1995年，网景工程师 Brendan Eich（布兰登·艾奇）花了10天时间设计了 JavaScript 语言；
-- 1996年，微软发布了 JScript（和 JS 有一些差异），同时拉开了 Navigator 和 Internet Explorer 大战的序幕（到2002年 IE 完胜，占据全世界96%的市场份额）；
-- 1997年6月，ECMA 为了让各大浏览器统一编程规范，以 JavaScript 语言为基础制定了 ECMAScript 标准规范 ECMA-262，从此浏览器厂商都是按照这个规范来开发自己的浏览器产品（第一版）；
-- 1999年12月，ES3 发布；
-- 2007年，ES4 夭折： 改动太大；
-- 2011年6月，ES5 发布。ES3 占据了10年历程，也是JS语言的基础；
-- 2015年6月，ES6 发布（但是由于之后规定每年发布一个新的版本，所以后改名 ES2015：let、const、Arrow function、Class、Module、Promise、Iterator、Generator、Set、Map、async、Symbol、Proxy…）
-- 2016年6月，对2015版本增强的2016版本发布；
-- 此后相继有 ES2017、ES2018…
+* 1995年，网景工程师 Brendan Eich（布兰登·艾奇）花了10天时间设计了 JavaScript 语言；
+* 1996年，微软发布了 JScript（和 JS 有一些差异），同时拉开了 Navigator 和 Internet Explorer 大战的序幕（到2002年 IE 完胜，占据全世界96%的市场份额）；
+* 1997年6月，ECMA 为了让各大浏览器统一编程规范，以 JavaScript 语言为基础制定了 ECMAScript 标准规范 ECMA-262，从此浏览器厂商都是按照这个规范来开发自己的浏览器产品（第一版）；
+* 1999年12月，ES3 发布；
+* 2007年，ES4 夭折： 改动太大；
+* 2011年6月，ES5 发布。ES3 占据了10年历程，也是JS语言的基础；
+* 2015年6月，ES6 发布（但是由于之后规定每年发布一个新的版本，所以后改名 ES2015：let、const、Arrow function、Class、Module、Promise、Iterator、Generator、Set、Map、async、Symbol、Proxy…）
+* 2016年6月，对2015版本增强的2016版本发布；
+* 此后相继有 ES2017、ES2018…
 
 > [Javascript诞生记 | 作者：阮一峰](https://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html)
 
 ## ES 版本特性一览
 
-版本 | 时间 | 概述
------|-----|-----
-ES1 | 1997 | 制定了语言的基本语法
-ES2 | 1998 | 较小改动
-ES3 | 1999 | 引入正则、异常处理、格式化输出等。IE 开始支持
-ES4 | 2007 | 过于激进，未发布
-ES5 | 2009 | 引入严格模式、JSON，扩展对象、数组、原型、字符串、日期方法
-ES6 | 2015 | 模块化、面向对象语法、Promise、箭头函数、let、const、数组解构赋值...
-ES7 | 2016 | 幂运算符、数组扩展、Async/await 关键字
-ES8 | 2017 | Async/await、字符串扩展
-ES9 | 2018 | 对象解构赋值、正则扩展
-ES1 | 2019 | 扩展对象、数组方法
-ES1 | 2020 | 链式操作、动态导入等
-ES.next | 2020+ | 动态指向下一个版本
+| 版本      | 时间    | 概述                                          |
+| ------- | ----- | ------------------------------------------- |
+| ES1     | 1997  | 制定了语言的基本语法                                  |
+| ES2     | 1998  | 较小改动                                        |
+| ES3     | 1999  | 引入正则、异常处理、格式化输出等。IE 开始支持                    |
+| ES4     | 2007  | 过于激进，未发布                                    |
+| ES5     | 2009  | 引入严格模式、JSON，扩展对象、数组、原型、字符串、日期方法             |
+| ES6     | 2015  | 模块化、面向对象语法、Promise、箭头函数、let、const、数组解构赋值... |
+| ES7     | 2016  | 幂运算符、数组扩展、Async/await 关键字                   |
+| ES8     | 2017  | Async/await、字符串扩展                           |
+| ES9     | 2018  | 对象解构赋值、正则扩展                                 |
+| ES1     | 2019  | 扩展对象、数组方法                                   |
+| ES1     | 2020  | 链式操作、动态导入等                                  |
+| ES.next | 2020+ | 动态指向下一个版本                                   |
 
 ## ES6
 
@@ -56,7 +59,7 @@ ES.next | 2020+ | 动态指向下一个版本
 3. 不存在变量提升；
 4. 不影响作用域链。
 
-``` javascript
+```javascript
 // 1. 不允许重复声明
 let dog = "狗"; 
 let dog = "猫";  // SyntaxError: Identifier 'dog' has already been declared
@@ -99,7 +102,7 @@ const 关键字用来声明常量。
 
 ES6 允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构赋值。
 
-``` javascript
+```javascript
 // 1. 数组的解构赋值
 const F4 = ["大哥","二哥","三哥","四哥"]; 
 let [a, b, c, d] = F4;
@@ -128,7 +131,7 @@ xiaopin(); // 此方法可以正常调用
 1. 字符串中可以出现换行符；
 2. 可以使用 ${} 形式引用变量来实现变量拼接。
 
-``` javascript
+```javascript
 let s = "大哥";
 let out = `${s}是我最大的榜样！`;
 console.log(out);  // 大哥是我最大的榜样！
@@ -138,7 +141,7 @@ console.log(out);  // 大哥是我最大的榜样！
 
 如果属性名和变量名相同，ES6 允许在大括号里面，直接写入变量和函数，作为对象的属性和方法。
 
-``` javascript
+```javascript
 let name = "hhhh";
 let change = function(){
   console.log("活着就是为了改变世界！");
@@ -172,7 +175,7 @@ ES6允许使用箭头（=>）定义函数，箭头函数提供了一种更加简
 5. 函数体如果只有一条语句，则花括号可以省略，且 return 也必须省略，该条语句的执行结果就是函数的返回值；
 6. 没有原型对象，没有 prototype 属性。
 
-``` javascript
+```javascript
 // 1. 箭头函数的 this 是静态的，始终指向函数声明时所在作用域下的 this 的值
 const school = {
   name : "dada",
@@ -217,9 +220,9 @@ let pow = (n) => n*n;
 <details>
 <summary>使用场景</summary>
 
-- 回调函数 this 指向问题
+* 回调函数 this 指向问题
 
-``` html
+```html
 <body>
   <div id="ad"></div>
   <script>
@@ -238,7 +241,7 @@ let pow = (n) => n*n;
 </body>
 ```
 
-``` html
+```html
 <script>
   let ad = document.getElementById('ad');
   ad.addEventListener("click", function(){
@@ -260,7 +263,7 @@ let pow = (n) => n*n;
 
 ES6 允许给函数的参数赋初始值。
 
-``` javascript
+```javascript
 // 1. 形参初始值，具有默认值的参数, 一般位置要靠后
 function add(a,b,c=10) {
   return a + b + c;
@@ -287,7 +290,7 @@ connect({
 
 ES6 引入 rest 参数，用于获取函数的实参，用来代替 arguments。
 
-``` javascript
+```javascript
 // ES5 获取实参的方式
 function data(){
 	console.log(arguments);  // 返回的是一个 Arguments 对象
@@ -307,7 +310,7 @@ data("大哥","二哥","三哥","四哥");
 
 扩展运算符能将数组转换为逗号分隔的参数序列，扩展运算符也是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列，对数组进行解包。
 
-``` javascript
+```javascript
 // ... 扩展运算符能将数组转换为逗号分隔的参数序列
 const bat = ['bytedance', 'alibaba', 'tencent'];
 // => 'bytedance','alibaba','tencent'
@@ -321,7 +324,7 @@ dagong(...bat); // 相当于 dagong('bytedance','alibaba','tencent')
 <details>
 <summary>使用场景</summary>
 
-``` javascript
+```javascript
 // 1. 数组的合并 
 const kuaizi = ['王太利','肖央']; 
 const fenghuang = ['曾毅','玲花'];
@@ -353,7 +356,7 @@ ES6 引入了一种新的原始数据类型 Symbol，表示独一无二的值。
 3. Symbol 定义的对象属性不能使用 for...of 循环遍历 ，但是可以使用 Reflect.ownKeys 来获取对象的所有键名；
 4. ES6 还提供了 11 个内置的 Symbol 值，指向语言内部使用的方法。可以称这些方法为魔术方法，因为它们会在特定的场景下自动执行。
 
-``` javascript
+```javascript
 // 创建 Symbol
 let s = Symbol();
 // 传入参数
@@ -375,19 +378,19 @@ console.log(s4 === s5); // true
 ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供 for...of 消费。
 原生具备 iterator 接口的数据(可用 for...of 遍历)：
 
-- Array
-- Arguments
-- Set
-- Map
-- String
-- TypedArray
-- NodeList
+* Array
+* Arguments
+* Set
+* Map
+* String
+* TypedArray
+* NodeList
 
 ### <a href="/js_generator" target="_blank">生成器 Generator</a>
 
 生成器函数是 ES6 提供的一种异步编程解决方案，语法行为与传统函数完全不同，以前用的是回调函数。
 
-``` javascript
+```javascript
 function* add(a, b){
   let c = 0;
   c = yield a + c;
@@ -414,10 +417,10 @@ Promise 是 ES6 引入的异步编程（文件操作、网络操作（ajax、req
 
 每个 promise 对象都有两个属性：
 
-- PromiseState：保存 promise 当前的状态（Pending, Resolved(Fulfilled), Rejected）
-- PromiseValue：保存 promise 返回的值
+* PromiseState：保存 promise 当前的状态（Pending, Resolved(Fulfilled), Rejected）
+* PromiseValue：保存 promise 返回的值
 
-``` javascript
+```javascript
 // 实例化 Promise 对象
 const p = new Promise(function(resolve,reject){ 
   // 封装一个异步操作
@@ -443,9 +446,9 @@ p.then(function(value){ // 成功
 <details>
 <summary>使用场景</summary>
 
-- 避免回调地狱
+* 避免回调地狱
 
-``` javascript
+```javascript
 // 回调函数写法
 const fs = require("fs");
 fs.readFile("./text1.txt",(err1,data1)=>{
@@ -535,14 +538,14 @@ ES6 提供了新的数据结构 Set（集合）。它类似于数组，但成员
 
 属性和方法：
 
-- new Set(接收一个可迭代数组)，自动去重；
-- size：返回集合的元素个数；注意不是 length；
-- add：增加一个新元素，返回当前集合；
-- delete：删除元素，返回 boolean 值；
-- has：检测集合中是否包含某个元素，返回 boolean 值；
-- clear：清空集合，返回 undefined。
+* new Set(接收一个可迭代数组)，自动去重；
+* size：返回集合的元素个数；注意不是 length；
+* add：增加一个新元素，返回当前集合；
+* delete：删除元素，返回 boolean 值；
+* has：检测集合中是否包含某个元素，返回 boolean 值；
+* clear：清空集合，返回 undefined。
 
-``` javascript
+```javascript
 // 创建Set集合
 let s = new Set(); 
 console.log(s, typeof s); // Set(0) {} "object"
@@ -573,7 +576,7 @@ console.log(s1); // Set(0) {}
 <details>
 <summary>使用场景</summary>
 
-``` javascript
+```javascript
 let arr = [1,2,3,4,5,4,3,2,1];
 // 1.数组去重
 let res1 = [...new Set(arr)]; 
@@ -601,11 +604,11 @@ ES6 提供了 Map 数据结构。它类似于对象，也是键值对的集合�
 
 属性和方法：
 
-- size：返回 Map 的元素个数；
-- set：增加一个新元素，返回当前 Map；
-- get：返回键名对象的键值；
-- has：检测 Map 中是否包含某个元素，返回 boolean 值；
-- clear：清空集合，返回 undefined。
+* size：返回 Map 的元素个数；
+* set：增加一个新元素，返回当前 Map；
+* get：返回键名对象的键值；
+* has：检测 Map 中是否包含某个元素，返回 boolean 值；
+* clear：清空集合，返回 undefined。
 
 ### Class 类
 
@@ -613,28 +616,28 @@ ES6 提供了更接近传统语言（Java，C++）的写法，引入了 Class（
 
 特性：
 
-- class 声明类；
-- constructor 定义构造函数初始化；
-- extends 继承父类；
-- super 调用父级构造方法；
-- static 定义静态方法和属性；
-- 父类方法可以重写。
+* class 声明类；
+* constructor 定义构造函数初始化；
+* extends 继承父类；
+* super 调用父级构造方法；
+* static 定义静态方法和属性；
+* 父类方法可以重写。
 
-``` javascript
+```javascript
 // ES5 写法
-function Phone(brand,price){
+function Phone(brand, price){
   this.brand = brand;
   this.price = price;
 }
 Phone.prototype.call = function(){ // 添加方法
   console.log("我可以打电话！");
 }
-let HuaWei = new Phone("华为",5999); // 实例化对象
-HuaWei.call();
+let nokia = new Phone("诺记", 999); // 实例化对象
+nokia.call();
 
 // ES6 写法
-class shouji{
-  constructor(brand,price) { // 构造方法
+class Shouji{
+  constructor(brand, price) { // 构造方法
     this.brand = brand; 
     this.price = price;
   }
@@ -642,23 +645,23 @@ class shouji{
     console.log("我可以打电话！");
   }
 }
-let HuaWeiplus = new shouji("华为",5999); 
-HuaWeiplus.call();
+let huaWei = new Shouji("华为", 5999); 
+huaWei.call();
 ```
 
 Class 中的静态成员
 
-- ES5 中实例对象和函数对象的属性是不相通的，实例对象跟构造函数的原型对象是相通的。函数对象的属性属于函数对象，不属于实例对象。
-- ES6 中类中加了 static 的属性是静态属性，静态属性属于类而不属于实例对象。
+* ES5 中实例对象和函数对象的属性是不相通的，实例对象跟构造函数的原型对象是相通的。函数对象的属性属于函数对象，不属于实例对象。
+* ES6 中类中加了 static 的属性是静态属性，静态属性属于类而不属于实例对象。
 
-``` javascript
+```javascript
 // class静态成员
 // ES5写法
 function Phone(){}
 Phone.prototype.color = "黑色";
 Phone.name = "手机"; //name是静态成员
 Phone.change = function(){
-    console.log("我可以改变世界！");
+    console.log("我可以打电话！");
 }
 let nokia = new Phone();
 console.log(nokia.name); // undefined
@@ -667,35 +670,35 @@ console.log(nokia.color); // 黑色
 // 原因：实例对象(nokia)和函数对象(phone)的属性是不相通的，实例对象跟构造函数(phone)原型对象是相通的。函数对象的属性属于函数对象，不属于实例对象。
 
 // ES6写法
-class Phone{
+class Shouji{
   constructor() { // 构造方法
     this.color = "黑色"; 
   }
   // 静态属性，属于类而不属于实例对象
   static name = "手机";  
-	static change(){
-    console.log("我可以改变世界！");
+  static change(){
+    console.log("我可以打电话！");
   }
 }
-let nokia = new Phone(); 
-console.log(nokia.name); // undefined
-nokia.change(); // TypeError: nokia.change is not a function
-console.log(nokia.color); // 黑色
+let huaWei = new Shouji(); 
+console.log(huaWei.name); // undefined
+huaWei.change(); // TypeError: nokia.change is not a function
+console.log(huaWei.color); // 黑色
 ```
 
 构造函数实现继承
 
-``` javascript
+```javascript
 // ES5 构造函数继承
-function Phone(brand,price){ 
+function Phone(brand, price){ 
   this.brand = brand; 
   this.price = price;
 }
 Phone.prototype.dial = function(){ 
   console.log("我可以打电话！");
 }
-function SmartPhone(brand,price,color,size){ 
-  Phone.call(this,brand,price); //改变了this的指向
+function SmartPhone(brand, price, color, size){ 
+  Phone.call(this, brand, price); //改变了this的指向
   this.color = color; 
   this.size = size;
 }
@@ -742,7 +745,7 @@ xiaomi.game();
 
 子类对父类方法的重写
 
-``` javascript
+```javascript
 class Phone{
   constructor(brand,price) { 
     this.brand = brand; 
@@ -779,7 +782,7 @@ chuizi.game();
 
 class 中 getter 和 setter
 
-``` javascript
+```javascript
 // class 中的 getter 和 setter 设置 
 class Phone{
   get price(){
@@ -799,30 +802,24 @@ s.price = 'free'  // "价格属性被修改了！"
 ### 数值扩展
 
 1. Number.EPSILON：
-Number.EPSILON 是 JavaScript 表示的最小精度，
-EPSILON 属性的值接近于 2.2204460492503130808472633361816E-16，
-主要用在浮点数的运算上；
-
+   Number.EPSILON 是 JavaScript 表示的最小精度，
+   EPSILON 属性的值接近于 2.2204460492503130808472633361816E-16，
+   主要用在浮点数的运算上；
 2. 二进制和八进制：
-ES6 提供了二进制和八进制数值的新的写法，分别用前缀 0b 和 0o 表示；
-
+   ES6 提供了二进制和八进制数值的新的写法，分别用前缀 0b 和 0o 表示；
 3. Number.isFinite() 与 Number.isNaN() ：
-Number.isFinite() 用来检查一个数值是否为有限的；
-Number.isNaN() 用来检查一个值是否全等于 NaN；
-
+   Number.isFinite() 用来检查一个数值是否为有限的；
+   Number.isNaN() 用来检查一个值是否全等于 NaN；
 4. Number.parseInt() 与 Number.parseFloat()：
-ES6 将全局方法 parseInt 和 parseFloat，移植到 Number 对象上面，使用不变；
-
+   ES6 将全局方法 parseInt 和 parseFloat，移植到 Number 对象上面，使用不变；
 5. Number.isInteger()：
-判断一个数值是否为整数；
-
+   判断一个数值是否为整数；
 6. Math.trunc() ：
-去除一个数的小数部分，返回整数部分；
-
+   去除一个数的小数部分，返回整数部分；
 7. Number.sign()：
-返回一个数字的符号, 指示数字是正数，负数还是零。
+   返回一个数字的符号, 指示数字是正数，负数还是零。
 
-``` javascript
+```javascript
 // 1. Number.EPSILON 
 function equal(a, b){
   return Math.abs(a-b) < Number.EPSILON;
@@ -879,7 +876,7 @@ Object.is() 用来比较两个值是否严格相等，与（===）行为基本�
 Object.assign() 用于对象的合并，将源对象的所有可枚举属性，复制到目标对象；
 proto、Object.setPrototypeOf()、 Object.getPrototypeOf() 可以直接设置原型对象。
 
-``` javascript
+```javascript
 // 1. Object.is()
 console.log(Object.is(120, 120)); // true
 console.log(Object.is(NaN, NaN)); // true
@@ -919,14 +916,13 @@ const cities = {
 Object.setPrototypeOf(school, cities); // 并不建议这么做
 console.log(Object.getPrototypeOf(school)); // {xiaoqu: Array(3)}
 console.log(school); // {name: '尚硅谷'}
-
 ```
 
 ### 模块化
 
 模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来。
 
-``` javascript
+```javascript
 // m.js 分别暴露
 export let school = "尚硅谷";
 export function teach(){ 
@@ -949,7 +945,7 @@ export default {
 }
 ```
 
-``` html
+```html
 <script type="module"> // type="module"
   // 通用方式
   import * as m from "./js/m.js"; // 引入m.js模块内容
@@ -972,7 +968,6 @@ export default {
   // 简便形式
   import oh from "./js/o.js"; // 只支持默认导出, oh === one
 </script>
-
 ```
 
 ### Babel 对 ES6 模块化代码转换
@@ -992,7 +987,7 @@ Babel 是一个 JavaScript 编译器，能够将新的ES规范语法转换成ES5
 在 ES7 中引入指数运算符（\*\*），用来实现幂运算，功能与 Math.pow 结果相同；
 例如：2的10次方：2\*\*10
 
-``` javascript
+```javascript
 console.log(Math.pow(2, 10) === 2**10); // true
 ```
 
@@ -1002,16 +997,16 @@ console.log(Math.pow(2, 10) === 2**10); // true
 
 async 和 await 两种语法结合可以让异步代码看起来像同步代码一样，简化异步函数的写法；
 
-- async 要点
+* async 要点
 
 async 函数的返回值为 promise 对象；promise 对象的结果由 async 函数执行的返回值决定；
 只要返回的值不是 promise 类型的对象，且状态为失败，其余情况，即使是没有返回的值，都是一个成功的 Promise 对象，成功的值就是 promise 对象返回的结果。
 
-- await 要点
+* await 要点
 
 await 必须写在 async 函数中；await 右侧的表达式一般为 promise 对象；await 返回的是 promise 成功的值；await 的 promise 失败了, 就会抛出异常, 需要通过 try...catch 捕获处理。
 
-``` javascript
+```javascript
 // async 和 await 结合发送ajax请求
 function sendAjax(url){
   return new Promise((resolve,reject)=>{
@@ -1039,12 +1034,12 @@ main();
 
 ### 对象方法扩展
 
-- Object.keys()：获取对象所有的键；
-- Object.values()：获取对象所有的值，返回一个给定对象的所有可枚举属性值的数组；
-- Object.entries()：返回给定对象自身可遍历属性 \[key, value\] 的数组；
-- Object.getOwnPropertyDescriptors()：返回指定对象所有自身属性的描述对象。
+* Object.keys()：获取对象所有的键；
+* Object.values()：获取对象所有的值，返回一个给定对象的所有可枚举属性值的数组；
+* Object.entries()：返回给定对象自身可遍历属性 \[key, value] 的数组；
+* Object.getOwnPropertyDescriptors()：返回指定对象所有自身属性的描述对象。
 
-``` javascript
+```javascript
 // 对象方法扩展
 let people = { 
   name: "Shouduo", 
@@ -1082,7 +1077,7 @@ const obj = Object.create(null, {
 
 Rest 参数和扩展运算符在 ES6 中已经引入，不过 ES6 中是只针对数组，在 ES9 中为对象提供了像数组一样的扩展运算符和 rest参数。
 
-``` javascript
+```javascript
 // 扩展运算符对对象的支持
 function connect({ host, port, ...user }) {
     console.log(host); // 127.0.0.1
@@ -1108,10 +1103,10 @@ console.log(mangseng); // {q: '天音波', w: '金钟罩', e: '天雷破', r: '�
 
 ### 正则扩展
 
-- 命名捕获分组
-ES9 允许命名捕获组使用符号（?），这样获取捕获结果可读性更强。
+* 命名捕获分组
+  ES9 允许命名捕获组使用符号（?），这样获取捕获结果可读性更强。
 
-``` javascript
+```javascript
 // 需求：提取 url 和标签内文本
 let str = '<a href="http://www.baidu.com">Shouduo</a>';
 const reg = /<a href="(.*)">(.*)<\/a>/; // 之前的写法
@@ -1127,10 +1122,10 @@ console.log(result1.groups.url); // http://www.baidu.com
 console.log(result1.groups.text); // Shouduo
 ```
 
-- 反向断言
-ES9 支持反向断言，通过对匹配结果前面的内容进行判断，对匹配进行筛选。
+* 反向断言
+  ES9 支持反向断言，通过对匹配结果前面的内容进行判断，对匹配进行筛选。
 
-``` javascript
+```javascript
 // 需求：只匹配到555
 let str = "JS5201314你知道么555啦啦啦";
 // 正向断言
@@ -1143,10 +1138,10 @@ const result1 = reg.exec(str);
 console.log(result1); // ['555', index: 13, input: 'JS5201314你知道么555啦啦啦', groups: undefined]
 ```
 
-- dotAll 模式
-正则表达式中的点（.）匹配除回车外的任何单字符，标记（s）改变这种行为，允许行终止符出现。
+* dotAll 模式
+  正则表达式中的点（.）匹配除回车外的任何单字符，标记（s）改变这种行为，允许行终止符出现。
 
-``` javascript
+```javascript
 // 需求：将 url 其中的电影名称和对应上映时间提取出来，存到对象中
 let str = `
   <ul>
@@ -1180,7 +1175,7 @@ console.log(data); // '[{"title":"肖生克的救赎","time":"上映日期: 1994
 
 将二维数组或者 map 转换成对象；之前学的 Object.entries 是将对象转换成二维数组。
 
-``` javascript
+```javascript
 const result = Object.fromEntries([["name","Shouduo"], ["age",24]]);
 console.log(result); // {name: 'Shouduo', age: 24}
 
@@ -1195,7 +1190,7 @@ console.log(result1); // {name: 'Shouduo', age: 24}
 
 去除字符串前后的空白字符。
 
-``` javascript
+```javascript
 const str = '     Hello World !      ';
 console.log(str.trimStart()); // "Hello World !      "
 console.log(str.trimEnd()); // "     Hello World !"
@@ -1208,7 +1203,7 @@ console.log(str.trim()); // "Hello World !"
 
 将多维数组降维。
 
-``` javascript
+```javascript
 // flat
 const arr = [1,2,3,[4,5,[6,7]],8,9];
 console.log(arr.flat()); // [1, 2, 3, 4, 5, [6, 7], 8, 9]
@@ -1227,14 +1222,13 @@ for (let i = 0; i < n; i++){
   acc[i * 2 + 1] = x * 2;
 }
 // [1, 2, 2, 4, 3, 6, 4, 8]
-
 ```
 
 ### Symbol.prototype.description
 
 获取 Symbol 的字符串描述。
 
-``` javascript
+```javascript
 let s = Symbol("Shouduo"); 
 console.log(s.description) // Shouduo
 ```
@@ -1245,7 +1239,7 @@ console.log(s.description) // Shouduo
 
 私有属性外部不可直接访问；
 
-``` javascript
+```javascript
 class Person{
   name; // 公有属性
   #age; // 私有属性
@@ -1272,7 +1266,7 @@ girl.intro(); // 小兰 18 90kg
 
 获取多个 promise 执行的结果集；返回的结果 PromiseStatus 永远是成功的状态。PromiseValue 是每个对象值合起来的数组。
 
-``` javascript
+```javascript
 const p1 = new Promise((resolve,reject)=>{ 
     setTimeout(()=>{
         resolve("商品数据-1");
@@ -1297,7 +1291,7 @@ console.log(result1);
 
 用来得到正则批量匹配的结果
 
-``` javascript
+```javascript
 let str = `
   <ul>
     <li>
@@ -1328,7 +1322,7 @@ for(let v of result){
 
 简化对象存在的判断逻辑，如果存在则往下走，省略对对象是否传入的层层判断。
 
-``` javascript
+```javascript
 // 可选链操作符 ?.
 function main(config){
   // 传统写法
@@ -1347,7 +1341,6 @@ main({
     username:"admin"
   }
 });
-
 ```
 
 ### 动态 import 导入
@@ -1355,7 +1348,7 @@ main({
 动态导入模块，什么时候使用什么时候导入；
 使用 import 动态导入后返回的是一个 Promise 对象。
 
-``` html
+```html
 // index.html
 <body>
   <button id="btn">点击</button>
@@ -1363,7 +1356,7 @@ main({
 </body>
 ```
 
-``` javascript
+```javascript
 //hello.js
 export function hello(){ 
   alert('Hello');
@@ -1383,7 +1376,7 @@ btn.onclick = function(){
 
 bigint类型不能直接跟普通的 int 类型做运算。
 
-``` javascript
+```javascript
 // 大整型
 let n = 100n; 
 console.log(n, typeof(n)); // 100n 'bigint'
@@ -1407,7 +1400,8 @@ console.log(BigInt(max)+BigInt(2)); // 9007199254740993n
 
 无论执行环境是什么，始终指向全局对象 window。
 
----
+- - -
+
 参考文章：
 [ES6-ES11的新特性 | 作者：Martian_小小](https://blog.csdn.net/weixin_45950819/article/details/123134455)
 [ECMAScript 6 入门 | 作者：阮一峰](https://es6.ruanyifeng.com/#README)
