@@ -21,7 +21,7 @@ abbrlink: promise_diy
 
 ``` javascript
 // 自定义函数 Promise
-function Promise(executor){
+function Promise(executor) {
     //添加状态属性与结果值属性
     this.PromiseState = 'pending';
     this.PromiseResult = null;
@@ -72,17 +72,17 @@ function Promise(executor){
 Promise.prototype.then = function (onResolved, onRejected) {
     const that = this;
     //判断回调参数是否存在
-    if(typeof onRejected !== 'function'){
+    if(typeof onRejected !== 'function') {
         onRejected = reason => {
             throw reason;
         }
     }
-    if(typeof onResolved !== 'function'){
+    if(typeof onResolved !== 'function') {
         onResolved = value => value;
     }
     return new Promise((resolve, reject) => {
         //封装重复的部分
-        function callback(type){
+        function callback(type) {
             try {
                 //将结果值传入
                 let result = type(that.PromiseResult);
@@ -129,12 +129,12 @@ Promise.prototype.then = function (onResolved, onRejected) {
 }
 
 //添加 catch 方法
-Promise.prototype.catch = function(onRejected){
+Promise.prototype.catch = function(onRejected) {
     return this.then(undefined, onRejected);
 }
 
 //添加 resolve 方法
-Promise.resolve = function(value){
+Promise.resolve = function(value) {
     //返回 promise 对象
     return new Promise((resolve, reject) => {
        if (value instanceof Promise) {
@@ -150,14 +150,14 @@ Promise.resolve = function(value){
 }
 
 //添加 reject 方法
-Promise.reject = function(reason){
+Promise.reject = function(reason) {
     return new Promise((resolve,reject) => {
         reject(reason);
     });
 }
 
 //添加 all 方法
-Promise.all = function(promises){
+Promise.all = function(promises) {
     return new Promise((resolve,reject) => {
         //添加变量
         let count = 0;
@@ -184,7 +184,7 @@ Promise.all = function(promises){
 }
 
 //添加 race 方法
-Promise.race = function(promises){
+Promise.race = function(promises) {
     return new Promise((resolve,reject) => {
         //遍历全部
         for (let i = 0; i < promises.length; i++) {
@@ -197,8 +197,8 @@ Promise.race = function(promises){
                 reject(r);
             })
          }
-      });
-    }
+    });
+}
 
 ```
 
@@ -255,7 +255,7 @@ class Promise{
     }
 
     //then 方法封装
-    then(onResolved,onRejected){
+    then(onResolved,onRejected) {
         const that = this;
         //判断回调参数是否存在
         if (typeof onRejected !== 'function') {
@@ -268,7 +268,7 @@ class Promise{
         }
         return new Promise((resolve, reject) => {
             //封装重复的部分
-            function callback(type){
+            function callback(type) {
                 try {
                     //将结果值传入
                     let result = type(that.PromiseResult);
@@ -290,13 +290,13 @@ class Promise{
             }
             //如果 Promise 状态为 fulfilled 回调这个函数
             if (this.PromiseState === 'fulfilled') {
-                setTimeout(()=>{
+                setTimeout(() => {
                     callback(onResolved);
                 });
             }
             //如果 Promise 状态为 rejected 回调这个函数
             if (this.PromiseState === 'rejected') {
-                setTimeout(()=>{
+                setTimeout(() => {
                     callback(onRejected);
                 });
             }
@@ -315,12 +315,12 @@ class Promise{
     }
 
     //catch 方法
-    catch(onRejected){
+    catch(onRejected) {
          return this.then(undefined, onRejected);
      }
      
     //resolve 方法
-    static resolve(value){
+    static resolve(value) {
         //返回 promise 对象
         return new Promise((resolve, reject) =>{
             if (value instanceof Promise) {
@@ -336,7 +336,7 @@ class Promise{
     }
 
     //reject 方法
-    static reject(reason){
+    static reject(reason) {
         return new Promise((resolve, reject)=>{
             reject(reason);
         });
