@@ -4,7 +4,7 @@ author: Shouduo
 date: 2022-03-22 12:42:16
 updated: 2022-03-22 15:03:25
 tags: ['前端', 'JavaScript', 'CSS']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/flip_technique.png
 index_img: /img/post/flip_technique.png
 abbrlink: flip_technique

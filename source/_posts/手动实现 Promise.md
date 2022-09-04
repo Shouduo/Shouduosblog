@@ -4,7 +4,7 @@ author: Shouduo
 date: 2021-06-02 12:42:18
 updated: 2021-06-04 19:38:05
 tags: ['前端', 'Promise', 'ES6']
-categories: ['FrontEnd']
+categories: ['Front-end']
 banner_img: /img/post/promise_diy.png
 index_img: /img/post/promise_diy.png
 abbrlink: promise_diy

@@ -4,7 +4,7 @@ author: Shouduo
 date: 2021-12-10 15:14:53
 updated: 2021-12-31 22:19:04
 tags: ['前端', 'EcmaScript', 'JavaScript']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/ecma_feature.png
 index_img: /img/post/ecma_feature.png
 abbrlink: es6_es11_feature
@@ -41,8 +41,8 @@ ES6 | 2015 | 模块化、面向对象语法、Promise、箭头函数、let、con
 ES7 | 2016 | 幂运算符、数组扩展、Async/await 关键字
 ES8 | 2017 | Async/await、字符串扩展
 ES9 | 2018 | 对象解构赋值、正则扩展
-ES1 | 2019 | 扩展对象、数组方法
-ES1 | 2020 | 链式操作、动态导入等
+ES10 | 2019 | 扩展对象、数组方法
+ES11 | 2020 | 链式操作、动态导入等
 ES.next | 2020+ | 动态指向下一个版本
 
 ## ES6

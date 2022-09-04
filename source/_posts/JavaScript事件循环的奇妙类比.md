@@ -4,7 +4,7 @@ author: Shouduo
 date: 2020-07-18 12:22:01
 updated: 2020-07-18 23:34:04
 tags: ['前端', 'JavaScript', '事件循环', '宏任务', '微任务', 'Event Loop', 'MacroTask', 'MicroTask', 'Task', 'Jobs']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/event_loop.png
 index_img: /img/post/event_loop.png
 abbrlink: js_event_loop

@@ -4,7 +4,7 @@ author: Shouduo
 date: 2019-10-18 19:12:05
 updated: 2019-10-18 19:47:11
 tags: ['Vue']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/vue_computed.png
 index_img: /img/post/vue_computed.png
 abbrlink: vue_computed

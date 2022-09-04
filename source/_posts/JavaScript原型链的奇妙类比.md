@@ -4,7 +4,7 @@ author: Shouduo
 date: 2020-05-10 21:41:22
 updated: 2020-05-10 22:12:08
 tags: ['前端', 'JavaScript', '原型链']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/prototype_chain.png
 index_img: /img/post/prototype_chain.png
 abbrlink: js_prototype_chain

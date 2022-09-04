@@ -4,7 +4,7 @@ author: Shouduo
 date: 2019-08-14 17:45:18
 updated: 2019-08-16 21:55:02
 tags: ['前端', 'JavaScript', 'generator']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/js_generator.jpeg
 index_img: /img/post/js_generator.jpeg
 abbrlink: js_generator

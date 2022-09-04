@@ -4,7 +4,7 @@ author: Shouduo
 date: 2019-9-20 19:52:11
 updated: 2021-11-03 22:01:41
 tags: ['前端', 'JavaScript', 'Symbol']
-categories: ['Frontend']
+categories: ['Front-end']
 banner_img: /img/post/js_symbol.png
 index_img: /img/post/js_symbol.png
 abbrlink: js_symbol
