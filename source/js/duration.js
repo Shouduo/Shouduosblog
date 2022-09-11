@@ -6,7 +6,7 @@
     let now = new Date();
     now.setTime(now.getTime()+250);
     days = Math.ceil((now - start) / MILLISECONDS_IN_DAY);
-    document.getElementById("timeDate").innerHTML = `Site alive for ${days} days`;
+    document.getElementById("timeDate").innerHTML = `Blog exsists for ${days} days`;
   }
 
   update();
