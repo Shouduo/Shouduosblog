@@ -71,7 +71,7 @@ console.log(cat);  // ReferenceError: cat is not defined
 // 3. 不存在变量提升；
 console.log(people1); // 大哥
 console.log(people2); // ReferenceError: people2 is not defined
-let people1 = "大哥"; // 存在变量提升
+var people1 = "大哥"; // 存在变量提升
 let people2 = "二哥"; // 不存在变量提升
 
 // 4. 不影响作用域链。
@@ -356,6 +356,7 @@ ES6 引入了一种新的原始数据类型 Symbol，表示独一无二的值。
 ``` javascript
 // 创建 Symbol
 let s = Symbol();
+
 // 传入参数
 let s2 = Symbol('Shouduo');
 let s3 = Symbol('Shouduo'); 
@@ -386,6 +387,8 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 ### <a href="/js_generator" target="_blank">生成器 Generator</a>
 
 生成器函数是 ES6 提供的一种异步编程解决方案，语法行为与传统函数完全不同，以前用的是回调函数。
+
+每次执行 next()，将当前所在 yield 后的表达式的值作为返回的对象的 value 值；如果没有遇到 yield，则返回 return 语句作为返回对象的 value 值；如果没有 return，则返回对象的 value 值为 undefined。next() 方法可以带一个参数，该参数会被当做上一条 yield 语句的返回值。
 
 ``` javascript
 function* add(a, b){
@@ -672,8 +675,8 @@ class Shouji{
     this.color = "黑色"; 
   }
   // 静态属性，属于类而不属于实例对象
-  static name = "手机";  
-	static change(){
+  static name = "手机";
+  static change(){
     console.log("我可以打电话！");
   }
 }
@@ -1250,12 +1253,12 @@ class Person{
   name; // 公有属性
   #age; // 私有属性
   #weight; // 私有属性
-  constructor(name, age, weight){ 
+  constructor(name, age, weight){
     this.name = name;
-    this.#age = age; 
+    this.#age = age;
     this.#weight = weight;
   }
-intro(){
+  intro(){
     console.log(this.name, this.#age, this.#weight); 
   }
 }
