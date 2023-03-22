@@ -17,6 +17,21 @@ abbrlink: promise_diy
 - 从功能来说，promise 对象用来封装一个异步操作，并且可以获得成功或失败的返回值。
 - JS 中的常见的异步操作：定时器，AJAX 中一般也是异步操作（也可以同步），回调函数可以理解为异步（不是严谨的异步操作）…等。
 
+## Promise 特性
+
+1. new Promise 时，需要传递一个 executor 执行器，执行器立刻执行；
+2. executor 接受两个参数，分别是 resolve 和 reject；
+3. promise 只能从 pending 到 rejected, 或者从 pending 到 fulfilled；
+4. promise 的状态一旦确认，就不会再改变；
+5. promise 都有 then 方法，then 接收两个参数，分别是 promise 成功的回调 onFulfilled，和 promise 失败的回调 onRejected；
+6. 如果调用 then 时，promise 已经成功，则执行 onFulfilled，并将promise的值作为参数传递进去；如果 promise 已经失败，那么执行 onRejected，并将 promise 失败的原因作为参数传递进去；如果 promise 的状态是 pending，需要将 onFulfilled 和 onRejected 函数存放起来，等待状态确定后，再依次将对的函数执行(发布订阅)；
+7. then 的参数 onFulfilled 和 onRejected 可以缺省；
+8. promise 可以 then 多次，promise 的 then 方法返回一个 promise；
+9. 如果 then 返回的是一个结果，那么就会把这个结果作为参数，传递给下一个then的成功的回调(onFulfilled)；
+10. 如果 then 中抛出了异常，那么就会把这个异常作为参数，传递给下一个then的失败的回调(onRejected)；
+11.如果 then 返回的是一个 promise，那么会等这个 promise 执行完，promise 如果成功，
+  就走下一个 then 的成功，如果失败，就走下一个 then 的失败。
+
 ## ES5 构造函数实现
 
 ``` javascript
@@ -391,3 +406,4 @@ class Promise{
 
 参考文章：
 [前端Promise总结笔记 | 作者：北极光之夜。](https://blog.csdn.net/luo1831251387/article/details/115643059)
+[尚硅谷Web前端Promise教程从入门到精通 | 作者：李强](https://www.bilibili.com/video/BV1GA411x7z1)

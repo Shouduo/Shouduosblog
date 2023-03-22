@@ -750,14 +750,14 @@ valine:
   appId: 7grzHkPlgF9PKEx83hrECIt3-MdYXbMMI
   appKey: 0PSP2WSNTfY8cBQ5kQBtWc4h
   path: window.location.pathname
-  placeholder:
+  placeholder: 'Leave a comment'
   avatar: 'retro'
   meta: ['nick', 'mail']
   requiredFields: []
   pageSize: 10
   lang: 'zh-CN'
   highlight: false
-  recordIP: true
+  recordIP: false
   serverURLs: https://7grzhkpl.api.lncldglobal.com
   emojiCDN:
   emojiMaps:
