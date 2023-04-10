@@ -97,3 +97,4 @@ abbrlink: android_as_webcam
 
 参考文章：
 [修改根目录文件/添加新的init*.rc到系统中，暨让手机接电即开机/修改手机成为车机、机顶盒，的二合一教程。 | 作者：请输入新用户名99](https://www.coolapk.com/feed/41463938?shareKey=MmVlMWNmZjFiZDA3NjQyMmYwMzI)
+[tinyCam Pro、IP Webcam，妥妥的“黑科技”，屌炸天的功能！ | 作者：i3综合社区](https://www.i3zh.com/4483.html)
