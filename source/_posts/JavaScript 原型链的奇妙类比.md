@@ -27,7 +27,7 @@ JavaScript 原型链的知识比较抽象，一直以来也是前端面试中常
 ![原型链](/img/post/prototype_chain_theory.png)
 
 1. 一切皆对象(Object)，实例对象，构造函数，原型对象都有 \_\_proto\_\_ 属性，且向上一路搜寻最终必定指向 Object.prototype；Object.prototype 是原型链的尽头，它的 \_\_proto\_\_ 为 null。
-2. function Object() 由 function Function() 根据 Function.prototype 创建，同时 Function.prototype 由 function Object() 根据 Object.prototype 创建,这里出现了一个先有 function Object() 还是先有 function.prototype 的问题，实际上它们都是原型链模型的先决设定，是同时存在的，一个生产工厂，一个生产样品，新建的产线才能运作。它们的 \_\_proto\_\_ 是为了迎合全局设定才故意指向彼此，它们是依存的关系，不是先后的因果关系。
+2. function Object() 由 function Function() 根据 Function.prototype 创建，同时 Function.prototype 由 function Object() 根据 Object.prototype 创建,这里出现了一个先有 function Object() 还是先有 Function.prototype 的问题，实际上它们都是原型链模型的先决设定，是同时存在的，一个生产工厂，一个生产样品，新建的产线才能运作。它们的 \_\_proto\_\_ 是为了迎合全局设定才故意指向彼此，它们是依存的关系，不是先后的因果关系。
 
 ``` javascript
 // foo instanceof Foo; 用于检测构造函数 Foo 的 prototype 属性是否出现在 foo 实例对象的原型链上。

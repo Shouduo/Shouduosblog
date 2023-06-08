@@ -29,8 +29,7 @@ abbrlink: promise_diy
 8. promise 可以 then 多次，promise 的 then 方法返回一个 promise；
 9. 如果 then 返回的是一个结果，那么就会把这个结果作为参数，传递给下一个then的成功的回调(onFulfilled)；
 10. 如果 then 中抛出了异常，那么就会把这个异常作为参数，传递给下一个then的失败的回调(onRejected)；
-11.如果 then 返回的是一个 promise，那么会等这个 promise 执行完，promise 如果成功，
-  就走下一个 then 的成功，如果失败，就走下一个 then 的失败。
+11. 如果 then 返回的是一个 promise，那么会等这个 promise 执行完，promise 如果成功，就走下一个 then 的成功，如果失败，就走下一个 then 的失败。
 
 ## ES5 构造函数实现
 

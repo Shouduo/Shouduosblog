@@ -190,10 +190,10 @@ async function async1() {
 }
 async function async2() {
     new Promise(function(resolve) {
-    console.log(3);
-    resolve();
-}).then(function() {
-    console.log(4);
+        console.log(3);
+        resolve();
+    }).then(function() {
+        console.log(4);
     });
 }
 console.log(5);

@@ -1007,8 +1007,9 @@ async 和 await 两种语法结合可以让异步代码看起来像同步代码�
 
 - async 要点
 
-async 函数的返回值为 promise 对象；promise 对象的结果由 async 函数执行的返回值决定；
-只要返回的值不是 promise 类型的对象，且状态为失败，其余情况，即使是没有返回的值，都是一个成功的 Promise 对象，成功的值就是 promise 对象返回的结果。
+async 函数执行结果总是返回一个 promise 对象，它的状态和值由 async 函数的返回决定；
+如果代码中返回的是一个 promise 对象，则该 promise 对象即为 async 函数执行返回的结果；
+如果代码中返回的不是 promise 对象，则 async 函数执行结果默认返回一个成功的 promise 对象，值为代码中返回的内容（包括 undefined）；
 
 - await 要点
 
