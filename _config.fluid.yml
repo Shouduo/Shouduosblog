@@ -688,7 +688,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
-    type: valine
+    type: giscus
 
 
 #---------------------------
@@ -829,6 +829,23 @@ cusdis:
   host:
   app_id:
   lang: zh-cn
+
+# Giscus
+# 基于 GitHub Discussions，类似于 Utterances
+# Based on GitHub Discussions, similar to Utterances
+# See: https://giscus.app/
+giscus:
+  repo: Shouduo/Shouduosblog
+  repo-id: R_kgDOG-9Gpg
+  category: Announcements
+  category-id: DIC_kwDOG-9Gps4CX_TD
+  theme-light: light
+  theme-dark: dark
+  mapping: title
+  reactions-enabled: 1
+  emit-metadata: 1
+  input-position: top
+  lang: zh-CN
 
 #---------------------------
 # 归档页
